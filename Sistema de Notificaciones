@@ -1,0 +1,14 @@
+Sistema de Notificaciones
+Descripción
+Es un subsistema especializado en enviar mensajes críticos a pacientes y médicos. Utiliza un sistema de colas para garantizar la entrega eficiente y confiable de las notificaciones.
+
+Características
+
+Envío de mensajes de texto en tiempo real para alertas críticas.
+Gestión de colas para priorización y orden en la entrega de notificaciones.
+Integración con la Plataforma de Salud Inteligente mediante un middleware RESTful.
+Tecnologías Utilizadas
+
+Mensajería: RabbitMQ para la gestión de colas y envío de notificaciones.
+API REST: Para recibir mensajes generados por la plataforma y enviarlos a los usuarios.
+Base de Datos: Para almacenar logs de mensajes enviados.
