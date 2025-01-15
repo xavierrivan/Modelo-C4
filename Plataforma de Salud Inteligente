@@ -1,0 +1,15 @@
+Plataforma de Salud Inteligente
+Descripción
+Es el sistema central encargado de coordinar la interacción entre los usuarios, dispositivos IoT, y otros módulos como el sistema de notificaciones. Actúa como middleware para garantizar la interoperabilidad entre los sistemas y usuarios.
+
+Características
+
+Gestión centralizada de pacientes, médicos, citas y notificaciones.
+Comunicación en tiempo real con dispositivos IoT para recibir y procesar datos.
+Integración de los sistemas mediante un middleware RESTful.
+Tecnologías Utilizadas
+
+Lenguaje de Programación: C#.
+Base de Datos: MongoDB para almacenamiento de datos médicos y de usuarios.
+Middleware RESTful: Para conectar los diferentes sistemas y usuarios.
+Procesamiento IoT: Integración con dispositivos para monitorización de signos vitales.
