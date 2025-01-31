@@ -1,0 +1,35 @@
+﻿@model Paciente
+@{
+    ViewData["Title"] = "Detalle Paciente";
+}
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="mb-3">
+        <label>Nombre</label>
+        <input asp-for="Nombre" class="form-control" disabled>
+    </div>
+    <div class="mb-3">
+        <label>Edad</label>
+        <input asp-for="Edad" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label>Genero</label>
+        <input asp-for="Genero" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label>Email</label>
+        <input asp-for="Email" class="form-control">
+    </div>
+
+    <div class="row col-6">
+       
+        <div class="col-6 col-md-6">
+            <a asp-action="Index" class="btn btn-outline-secondary">Regresar</a>
+        </div>
+    </div>
+
+
+</form>
+
+<p>Esta es la vista el detalle de productos</p>

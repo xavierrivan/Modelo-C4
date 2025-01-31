@@ -1,0 +1,52 @@
+﻿﻿
+@model List<SaludPaciente.Models.Paciente>
+
+@{
+    ViewData["Title"] = "Lista Pacientes";
+}
+
+
+
+<h1>@ViewData["Title"]</h1>
+
+<button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Create", "Paciente")'">Nuevo Paciente</button>
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Email</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <th scope="row">@item.IdPaciente</th>
+                <td>@item.Nombre</td>
+                <td>@item.Edad</td>
+                <td>@item.Genero</td>
+                <td>@item.Email</td>
+                <td>
+
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <a asp-action="Delete" asp-route-IdPaciente="@item.IdPaciente" class="btn btn-danger"><i class="bi bi-trash-fill"></i></a>
+                        <a asp-action="Edit" asp-route-IdPaciente="@item.IdPaciente" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
+                        <a asp-action="Details" asp-route-IdPaciente="@item.IdPaciente" class="btn btn-info"><i class="bi bi-eye-fill"></i></a>
+                    </div>
+
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+
+
+<p>Esta es la vista de la lista de Pacientes</p>
